@@ -1,0 +1,62 @@
+<div id="error-container">
+    <h1 id="error-title">Что-то пошло не так</h1>
+    <p id="error-message">{{message}}</p>
+    <a href="/homepage" id="error-button">На главную</a>
+</div>
+
+<style>
+    /* Сброс базовых стилей */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Основные стили для контейнера */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #1e1e1e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #error-container {
+        background-color: #2c2c2c;
+        padding: 30px 40px;
+        border-radius: 16px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    #error-title {
+        font-size: 1.5em;
+        color: #e0e0e0;
+        margin-bottom: 15px;
+    }
+
+    #error-message {
+        font-size: 1.1em;
+        color: #bbb;
+        margin-bottom: 20px;
+    }
+
+    /* Кнопка */
+    #error-button {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #8a2be2;
+        color: white;
+        font-size: 1em;
+        text-decoration: none;
+        border-radius: 16px;
+        transition: background-color 0.3s;
+    }
+
+    #error-button:hover {
+        background-color: #7a1bb3;
+    }
+</style>

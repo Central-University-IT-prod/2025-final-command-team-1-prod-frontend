@@ -1,0 +1,112 @@
+<div class="login-container" id="login-container">
+    <h1 id="login-logo">BookBook</h1>
+    <h1 class="login-title" id="login-title">Вход в панель администратора</h1>
+    <form action="/login" method="POST" id="login-form">
+        <div class="form-group" id="email-group">
+            <label for="email" class="form-label" id="email-label">Почта</label>
+            <input type="text" id="email" name="email" required class="form-input">
+        </div>
+        <div class="form-group" id="password-group">
+            <label for="password" class="form-label" id="password-label">Пароль</label>
+            <input type="password" id="password" name="password" required class="form-input">
+        </div>
+        <button type="submit" id="login-button" class="form-button">Войти</button>
+    </form>
+</div>
+
+<style>
+    /* Сброс базовых стилей */
+    /* Сброс базовых стилей */
+    /* Сброс базовых стилей */
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Основные стили для контейнера */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #1e1e1e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #login-logo {
+        text-align: center;
+        font-size: 2em;
+        color: #8a2be2;
+        margin-bottom: 10px;
+    }
+
+    #login-container {
+        background-color: #2c2c2c;
+        padding: 30px 40px;
+        border-radius: 16px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #login-title {
+        text-align: center;
+        font-size: 1.2em;
+        color: #e0e0e0;
+        margin-bottom: 30px;
+    }
+
+    /* Стиль для формы */
+    #login-form {
+        width: 100%;
+    }
+
+    #email-group,
+    #password-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        display: block;
+        font-size: 1em;
+        color: #bbb;
+        margin-bottom: 8px;
+        margin-left: 10px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #444;
+        border-radius: 16px;
+        outline: none;
+        background-color: #333;
+        color: #e0e0e0;
+        transition: border-color 0.3s;
+    }
+
+    /* Фиолетовый цвет для фокуса на поле ввода */
+    .form-input:focus {
+        border-color: #8a2be2;
+    }
+
+    .form-button {
+        width: 100%;
+        padding: 12px;
+        background-color: #8a2be2;
+        color: white;
+        font-size: 1.1em;
+        border: none;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+    /* Фиолетовый цвет для кнопки при наведении */
+    .form-button:hover {
+        background-color: #7a1bb3;
+    }
+</style>
